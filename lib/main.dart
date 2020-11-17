@@ -20,8 +20,7 @@ class MyApp extends StatelessWidget {
         // or simply save your changes to "hot reload" in a Flutter IDE).
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
-        primarySwatch: Colors.black
-        ,
+        primarySwatch: Colors.black,
         // This makes the visual density adapt to the platform that you run
         // the app on. For desktop platforms, the controls will be smaller and
         // closer together (more dense) than on mobile platforms.
@@ -64,12 +63,9 @@ class _MyHomePageState extends State<MyHomePage> {
     });
   }
 
-  void testfunction() {
-  }
+  void testfunction() {}
 
-  void tryFumction() {
-
-  }
+  void tryFumction() {}
 
   @override
   Widget build(BuildContext context) {
@@ -103,31 +99,15 @@ class _MyHomePageState extends State<MyHomePage> {
           // center the children vertically; the main axis here is the vertical
           // axis because Columns are vertical (the cross axis would be
           // horizontal).
-            mainAxisAlignment: MainAxisAlignment.start,
-            children: <Text ("hello row")]
-
-        'You have pushed the button this many times:',
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [Text("Hello")],
+        ),
       ),
-      Text(
-        'counter is : $_counter',
-        style: Theme
-            .of(context)
-            .textTheme
-            .headline4,
-      ),
-      FlatButton(
-          onPressed: tryFunction, child: Text("hello FlatButton")),
-      RaisedButton(
-          onPressed: testFunction, child: Test("Hello RaisedButton")),
-
-      ],
-    ),
-    ),
-    floatingActionButton: FloatingActionButton(
-    onPressed: _incrementCounter,
-    tooltip: 'Increment',
-    child: Icon(Icons.access_alarm_outlined),
-    ), // This trailing comma makes auto-formatting nicer for build methods.
+      floatingActionButton: FloatingActionButton(
+        onPressed: _incrementCounter,
+        tooltip: 'Increment',
+        child: Icon(Icons.access_alarm_outlined),
+      ), // This trailing comma makes auto-formatting nicer for build methods.
     );
-    }
+  }
 }
